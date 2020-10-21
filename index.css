@@ -1,0 +1,43 @@
+body {
+
+  font-family: sans-serif;
+  background-color: palegoldenrod;
+}
+#Header{
+background-color: lightgray;
+border-width: 3px;
+border-color: black;
+border-style: solid;
+
+}
+#Subtext{
+background-color: lightgray;
+border-width: 3px;
+border-color: black;
+border-style: solid;
+
+}
+
+#Article1{
+background-color: lightgray;
+border-width: 3px;
+border-color: black;
+border-style: solid;
+
+}
+
+#Article2{
+background-color: lightgray;
+border-width: 3px;
+border-color: black;
+border-style: solid;
+
+}
+#side{
+  background-color: lightgray;
+  border-width: 3px;
+  border-color: black;
+  border-style: solid;
+  
+  }
+/* google css grid nested */
