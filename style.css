@@ -3,11 +3,17 @@ body {
   font-family: sans-serif;
   background-color: palegoldenrod;
 }
+.container {
+max-width: 1024px;
+margin: auto;
+
+}
 #Header{
 background-color: lightgray;
 border-width: 3px;
 border-color: black;
 border-style: solid;
+padding: 20px;
 
 }
 #Subtext{
@@ -15,6 +21,7 @@ background-color: lightgray;
 border-width: 3px;
 border-color: black;
 border-style: solid;
+padding: 20px;
 
 }
 
@@ -23,6 +30,7 @@ background-color: lightgray;
 border-width: 3px;
 border-color: black;
 border-style: solid;
+padding: 20px;
 
 }
 
@@ -31,6 +39,7 @@ background-color: lightgray;
 border-width: 3px;
 border-color: black;
 border-style: solid;
+padding: 20px;
 
 }
 #side{
@@ -38,6 +47,7 @@ border-style: solid;
   border-width: 3px;
   border-color: black;
   border-style: solid;
+  padding: 20px;
   
   }
 /* google css grid nested */
