@@ -32,30 +32,33 @@ body {
 .box1 {
 
  grid-column: 1/4;
- /* grid-auto-rows:minmax(10px, auto); */
- /* grid-auto-columns: minmax(auto,10px); */
+ 
  border: 1px solid #333;
- height: 60px;
+ 
     }
 
 
  .Menu {
  display: grid;
- grid-template-areas: "logo menuItem1 menuItem2 menuItem3 Login ";
- /* grid-auto-rows:minmax(100px, auto); */
- /* grid-auto-columns: minmax(auto,100px); */
- grid-gap: 1em;
- /* justify-items: stretch;
- align-items:stretch; */
+ grid-template-columns: repeat(6, 1fr);
+ /* grid-template-areas: "logo menuitem1 menuitem2 menuitem3 Login "; */
+ grid-gap: 1em; 
  grid-column: 1/6;
- grid-row: 1/6;
- border-width: 3px;
+  border-width: 3px;
 border-color: black;
 border-style: solid;
 padding: 20px;
-height: 17px;
+justify-items: center;
+  align-items: center;
 
     }  
+    #logo{
+      grid-column: 1/3;
+    }
+    /* #Login{
+      grid-column: 4/5;
+    } */
+
     
 #Header{
 grid-column: 1/3;
@@ -110,6 +113,8 @@ padding: 20px;
     border-color: black;
     border-style: solid;
     padding: 20px;
+    text-align: center;
+    
    
   }
 
@@ -119,7 +124,10 @@ padding: 20px;
     border-width: 3px;
     border-color: black;
     border-style: solid;
+    border-radius: 10px;
     padding: 20px;
+    padding: 60px;
+    text-transform: uppercase;
     
     }
   .form{
@@ -128,8 +136,31 @@ padding: 20px;
       border-width: 3px;
       border-color: black;
       border-style: solid;
-      padding: 20px;
+      border-radius: 10px;
+      padding: 60px;
       height: 200px;
+      /* margin: 30px auto; */
+      max-width: 800px;
+
       
       }
+      .form input{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 5px;
+        border: rgb(246, 183, 88) 1px solid;
+        border-radius: 2px;
+        
+      }
 
+      .form input[type=button], input[type=submit], input[type=reset]
+      {
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        padding: 16px 32px;
+        text-decoration: none;
+        margin: 4px 2px;
+        cursor: pointer;
+        
+      }
