@@ -3,12 +3,62 @@ body {
   font-family: sans-serif;
   background-color: palegoldenrod;
 }
-.container {
-max-width: 1024px;
-margin: auto;
 
-}
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* grid-auto-rows:minmax(100px, auto); */
+  grid-gap: 1em;
+  justify-items: stretch;
+  align-items: stretch;  
+  max-width: 1024px;
+  margin: auto;
+      }
+
+      .container2 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        /* grid-auto-rows:minmax(100px, auto); */
+        grid-gap: 1em;
+        justify-items: stretch;
+        align-items: stretch;  
+        max-width: 1024px;
+        margin: auto;
+        
+        width: 100vw;
+        height: 100vh;
+            }
+
+.box1 {
+
+ grid-column: 1/4;
+ /* grid-auto-rows:minmax(10px, auto); */
+ /* grid-auto-columns: minmax(auto,10px); */
+ border: 1px solid #333;
+ height: 60px;
+    }
+
+
+ .Menu {
+ display: grid;
+ grid-template-areas: "logo menuItem1 menuItem2 menuItem3 Login ";
+ /* grid-auto-rows:minmax(100px, auto); */
+ /* grid-auto-columns: minmax(auto,100px); */
+ grid-gap: 1em;
+ /* justify-items: stretch;
+ align-items:stretch; */
+ grid-column: 1/6;
+ grid-row: 1/6;
+ border-width: 3px;
+border-color: black;
+border-style: solid;
+padding: 20px;
+height: 17px;
+
+    }  
+    
 #Header{
+grid-column: 1/3;
 background-color: lightgray;
 border-width: 3px;
 border-color: black;
@@ -17,6 +67,7 @@ padding: 20px;
 
 }
 #Subtext{
+grid-column: 1/3;  
 background-color: lightgray;
 border-width: 3px;
 border-color: black;
@@ -43,6 +94,8 @@ padding: 20px;
 
 }
 #side{
+  grid-column: 3/4;
+  grid-row: 2/5;
   background-color: lightgray;
   border-width: 3px;
   border-color: black;
@@ -50,4 +103,33 @@ padding: 20px;
   padding: 20px;
   
   }
-/* google css grid nested */
+  .footer {
+    grid-column: 1/4;
+    background-color: rgb(183, 216, 134);
+    border-width: 3px;
+    border-color: black;
+    border-style: solid;
+    padding: 20px;
+   
+  }
+
+  #loginHeader{
+    grid-column: 1/3;
+    background-color: lightgray;
+    border-width: 3px;
+    border-color: black;
+    border-style: solid;
+    padding: 20px;
+    
+    }
+  .form{
+    grid-column: 1/4;
+      background-color: lightgray;
+      border-width: 3px;
+      border-color: black;
+      border-style: solid;
+      padding: 20px;
+      height: 200px;
+      
+      }
+

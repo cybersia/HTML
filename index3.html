@@ -1,16 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
- 
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index</title>
-    
-    <link rel="stylesheet" href="style.css">
+  <title>CSS Grid</title>
+  <style>
+    .wrapper {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-auto-rows: minmax(200px, auto);
+      grid-gap: 1em;
+      justify-items: stretch;
+      align-items: stretch;
+    }
+
+    /* .wrapper>div {
+      background: #eee;
+      padding: 1em;
+    } */
+
+    /* .wrapper>div:nth-child(odd) {
+      background: #ddd;
+    } */
+
+
+
+    .box1 {
+
+      grid-column: 1/4;
+      border: 1px solid #333;
+    }
+
+    .Menu {
+      display: grid;
+      grid-template-areas: "logo . menuItem1 menuItem2 menuItem3 . Login ";
+      /* grid-auto-rows:minmax(200px, auto); */
+      grid-gap: 1em;
+      justify-items: stretch;
+      align-items: stretch;
+
+    }
+
+    #Header {
+      grid-column: 1/3;
+
+      border: 1px solid #333;
+    }
+
+    #Subtext {
+      grid-column: 1/3;
+
+      border: 1px solid #333;
+    }
+
+    #Article1 {
+      border: 1px solid #333;
+    }
+
+    #side {
+      grid-column: 3/4;
+      grid-row: 2/5;
+      border: 1px solid #333;
+    }
+
+    #Article2 {
+      border: 1px solid #333;
+    }
+
+    .footer {
+      grid-column: 1/4;
+      background-color: rgb(183, 216, 134);
+      border: 1px solid #333;
+    }
+
+  </style>
 </head>
 
 <body>
-  <div class="container">
+  <div class="wrapper">
     <div class="box box1">
       <div class="Menu">
         <div id="logo">Logo</div>
@@ -70,24 +136,5 @@
 
   </div>
 </body>
-</html> 
-<!--   
-  <aside>
-          <h4>USA</h4>
-          <li>NewYork</li>
-          <li>SanFransisco</li>
-          <li>Chicago</li>
-        </ul>
-        <ul>
-          <h4>Canada</h4>
-          <li>Toronto</li>
-          <li>Vancuver</li>
-          <li>Calgary</li>
-        </ul>
-        <ul>
-          <h4>Germany</h4>
-          <li>Koln</li>
-          <li>Munchen</li>
-          <li>Hamburg</li>
-        </ul>
-  </aside> -->
+
+</html>
